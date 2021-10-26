@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+
+    int x;
+    cout << "Enter your marks in number to see the grade" << endl;
+    cin >> x;
+    if (!isdigit(x))
+    {
+        cout << "You have not entered a number " << endl;
+    }
+   
+    else if (x >= 70)
+    {
+        cout << "Your grade is A" << endl;
+    }
+    else if (x >= 60 && x < 70)
+    {
+        cout << "Your grade is B" << endl;
+    }
+    else if (x >= 50 && x < 60)
+    {
+        cout << "Your grade is C" << endl;
+    }
+    else if (x >= 40 && x < 50)
+    {
+        cout << "Your grade is D" << endl;
+    }
+    
+    else if (x < 40)
+    {
+        cout << "Your grade is F" << endl;
+
+    }
+    else
+    {
+        cout << "You have entered an incorrect value" << endl;
+    }
+    return 0;
+}
